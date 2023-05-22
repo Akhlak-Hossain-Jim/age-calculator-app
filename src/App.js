@@ -254,6 +254,12 @@ const Container = styled.main`
           color: var(--black);
           border-radius: 9px;
           font-size: 31.5px;
+          -moz-appearance: textfield;
+          &::-webkit-outer-spin-button,
+          &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
           &:focus {
             border-color: var(--purple);
           }
