@@ -1,3 +1,10 @@
+# Age Calculator App by [Akhlak Hossain Jim](https://ahjim.com)
+
+Important links:
+
+- View Live [site](https://news-homepage-fm-ahjim.netlify.app/)
+- View repo on [github](https://github.com/Akhlak-Hossain-Jim/age-calculator-app)
+
 # Front-end Style Guide
 
 ## Layout
