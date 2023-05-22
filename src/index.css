@@ -13,8 +13,9 @@
 
 :root {
   /* primary */
+  --green: hsl(79, 100%, 35%);
   --purple: hsl(259, 100%, 65%);
-  --light-red: hsl(0, 100%, 67%);
+  --red: hsl(0, 100%, 67%);
 
   /* Neutral */
   --white: hsl(0, 0%, 100%);
@@ -22,4 +23,8 @@
   --light-grey: hsl(0, 0%, 86%);
   --smokey-grey: hsl(0, 1%, 44%);
   --black: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--off-white);
 }
