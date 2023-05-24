@@ -175,7 +175,7 @@ export default function App() {
         </section>
         <section className="submit">
           <button onClick={handleSubmit}>
-            <img src="/images/icon-arrow.svg" alt="" />
+            <img src="/images/icon-arrow.svg" alt="down arrow" />
           </button>
         </section>
         <section className="result">
@@ -215,10 +215,15 @@ const Container = styled.main`
   width: min(1440px, 100%);
   min-height: 915px;
   margin: 0 auto;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--off-white);
+  @media (max-width: 548px) {
+    align-items: start;
+    min-height: 700px;
+  }
   & > .card {
     background-color: var(--white);
     width: min(840px, 100%);
@@ -231,13 +236,25 @@ const Container = styled.main`
     display: flex;
     flex-direction: column;
     gap: 47px;
+    @media (max-width: 548px) {
+      padding: 50px 24px;
+      margin-top: 48px;
+      border-radius: 25px 25px 100px;
+    }
     & > .form {
       display: flex;
       gap: 32px;
+      @media (max-width: 548px) {
+        gap: 16px;
+      }
       & > .input_field {
         display: flex;
         flex-direction: column;
         max-width: 160px;
+        @media (max-width: 548px) {
+          flex: 1;
+          max-width: 30%;
+        }
         & > label {
           letter-spacing: 2.2px;
           font-size: 16px;
@@ -245,6 +262,9 @@ const Container = styled.main`
           padding-bottom: 7px;
           &.error {
             color: var(--red);
+          }
+          @media (max-width: 548px) {
+            font-size: 12px;
           }
         }
         & > input {
@@ -266,6 +286,10 @@ const Container = styled.main`
           &.error {
             border-color: var(--red);
           }
+          @media (max-width: 548px) {
+            font-size: 20px;
+            padding: 6px 12px;
+          }
         }
         & > span {
           font-size: 14px;
@@ -274,6 +298,9 @@ const Container = styled.main`
           font-style: italic;
           padding-top: 9px;
           color: var(--red);
+          @media (max-width: 548px) {
+            font-size: 10px;
+          }
         }
       }
     }
@@ -295,6 +322,11 @@ const Container = styled.main`
         &:hover {
           background-color: var(--black);
         }
+        @media (max-width: 548px) {
+          right: auto;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%) scale(0.6);
+        }
       }
     }
     & > .result {
@@ -310,6 +342,9 @@ const Container = styled.main`
         line-height: 100%;
         letter-spacing: -3.2px;
         color: var(--black);
+        @media (max-width: 548px) {
+          font-size: 40px;
+        }
         & > span {
           color: var(--purple);
           margin-right: 16px;
